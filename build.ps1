@@ -6,7 +6,7 @@ $msbuildPath = "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\M
 $buildProperties = "/p:Configuration=Release;DeployOnBuild=true;PublishProfile=FolderProfile"
 
 
-if (Test-Path -Path msbuildPath -IsValid) {
+if (Test-Path -Path $msbuildPath -IsValid) {
  $msbuild = Get-Item "$msbuildPath\MSBuild.exe"
 
  # Publish Project
